@@ -1,0 +1,13 @@
+{
+  "chef-server": {
+    "addons": [ "manage" ],
+    "accept_license": true
+  },
+  "run_list": [
+    "recipe[chef-server]",
+    "recipe[chef-server::addons]",
+    "recipe[chef-client]",
+    "recipe[postfix]",
+    "recipe[ntpdate]"
+  ]
+}

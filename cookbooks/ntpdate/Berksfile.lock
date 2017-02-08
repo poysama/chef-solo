@@ -1,0 +1,8 @@
+DEPENDENCIES
+  ntpdate
+    path: .
+
+GRAPH
+  cron (1.6.1)
+  ntpdate (1.2.0)
+    cron (~> 1.6)
